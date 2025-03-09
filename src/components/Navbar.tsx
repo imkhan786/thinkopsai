@@ -66,7 +66,7 @@ const Navbar = () => {
             >
               Login
             </a>
-            <Button className="rounded-full px-6 bg-white text-slate-900 hover:bg-white/90">
+            <Button className="rounded-md px-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 shadow-md transition-all">
               Get Started
             </Button>
           </div>
@@ -121,7 +121,7 @@ const Navbar = () => {
               >
                 Login
               </a>
-              <Button className="w-full rounded-full bg-white text-slate-900 hover:bg-white/90">
+              <Button className="w-full rounded-md bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 shadow-md transition-all">
                 Get Started
               </Button>
             </div>

@@ -68,10 +68,8 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16">
           <div className="max-w-lg mb-10 md:mb-0">
-            <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
-              <p className="text-primary font-medium text-sm">
-                Success Stories
-              </p>
+            <div className="inline-block px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
+              <p className="text-white font-medium text-sm">Success Stories</p>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
               What Our <span className="text-primary">Clients</span> Say
@@ -99,11 +97,11 @@ const TestimonialsSection = () => {
                   setAutoplay(false);
                 }}
               >
-                <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center cursor-pointer hover:bg-muted/50 transition-colors">
+                <div className="w-12 h-12 rounded-md border border-indigo-300 flex items-center justify-center cursor-pointer hover:bg-indigo-50 transition-colors shadow-md">
                   <ChevronLeft className="w-6 h-6" />
                 </div>
                 <div
-                  className="w-12 h-12 rounded-full border border-border flex items-center justify-center cursor-pointer hover:bg-muted/50 transition-colors"
+                  className="w-12 h-12 rounded-md border border-indigo-300 flex items-center justify-center cursor-pointer hover:bg-indigo-50 transition-colors shadow-md"
                   onClick={() => {
                     next();
                     setAutoplay(false);
@@ -117,7 +115,7 @@ const TestimonialsSection = () => {
                 {testimonials.map((testimonial, index) => (
                   <motion.div
                     key={index}
-                    className={`cursor-pointer p-4 rounded-xl transition-all duration-300 ${current === index ? "bg-primary/10 border-l-4 border-primary" : "hover:bg-muted/50"}`}
+                    className={`cursor-pointer p-4 rounded-md transition-all duration-300 ${current === index ? "bg-gradient-to-r from-indigo-50 to-blue-50 border-l-4 border-indigo-600" : "hover:bg-indigo-50"}`}
                     onClick={() => {
                       setDirection(index > current ? 1 : -1);
                       setCurrent(index);
@@ -147,7 +145,7 @@ const TestimonialsSection = () => {
             </div>
 
             <div className="lg:col-span-8">
-              <div className="overflow-hidden bg-muted/10 rounded-3xl border border-border p-8 lg:p-12 h-full">
+              <div className="overflow-hidden bg-white rounded-md border border-indigo-200 p-8 lg:p-12 h-full shadow-md">
                 <AnimatePresence mode="wait" initial={false} custom={direction}>
                   <motion.div
                     key={current}
@@ -200,8 +198,8 @@ const TestimonialsSection = () => {
                           </div>
                         </div>
 
-                        <div className="py-2 px-4 bg-primary/10 rounded-full">
-                          <p className="font-semibold text-primary">
+                        <div className="py-2 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-md">
+                          <p className="font-semibold text-white">
                             {testimonials[current].metric}
                           </p>
                         </div>

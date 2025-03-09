@@ -27,10 +27,8 @@ const DemoSection = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
-              <p className="text-primary font-medium text-sm">
-                Interactive Demo
-              </p>
+            <div className="inline-block px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
+              <p className="text-white font-medium text-sm">Interactive Demo</p>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
               See the <span className="text-primary">Impact</span> of Our AI
@@ -101,7 +99,7 @@ const DemoSection = () => {
             <Button
               onClick={calculateEfficiency}
               size="lg"
-              className="w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90 py-6"
+              className="w-full rounded-md bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 py-6 shadow-md transition-all"
             >
               Calculate Efficiency
               <ArrowRight className="ml-2 h-5 w-5" />

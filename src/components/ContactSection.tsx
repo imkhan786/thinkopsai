@@ -18,8 +18,8 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16">
           <div className="max-w-lg mb-10 md:mb-0">
-            <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
-              <p className="text-primary font-medium text-sm">Get in Touch</p>
+            <div className="inline-block px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 mb-4">
+              <p className="text-white font-medium text-sm">Get in Touch</p>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
               Ready to <span className="text-primary">Transform</span> Your
@@ -260,7 +260,7 @@ const ContactSection = () => {
 
               <Button
                 type="submit"
-                className="w-full h-12 rounded-full bg-primary text-primary-foreground hover:bg-primary/90"
+                className="w-full h-12 rounded-md bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 shadow-md transition-all"
               >
                 Send Message
                 <ArrowRight className="ml-2 h-5 w-5" />
