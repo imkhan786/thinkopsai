@@ -19,7 +19,7 @@ const ContactSection = () => {
         <div className="flex flex-col md:flex-row justify-between items-start mb-16">
           <div className="max-w-lg mb-10 md:mb-0">
             <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
-              <p className="text-primary font-medium text-sm">Contact Us</p>
+              <p className="text-primary font-medium text-sm">Get in Touch</p>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
               Ready to <span className="text-primary">Transform</span> Your
@@ -45,51 +45,108 @@ const ContactSection = () => {
           >
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+                <h3 className="text-2xl font-bold mb-6">
+                  Why Choose ThinkOps AI
+                </h3>
                 <div className="space-y-6">
                   <div className="flex items-start">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
-                      <Mail className="w-5 h-5 text-primary" />
+                      <svg
+                        className="w-5 h-5 text-primary"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                        />
+                      </svg>
                     </div>
                     <div>
-                      <p className="font-medium mb-1">Email</p>
+                      <p className="font-medium mb-1">
+                        Enterprise-Grade Security
+                      </p>
                       <p className="text-muted-foreground">
-                        contact@thinkops.ai
+                        Your data is protected with industry-leading security
+                        protocols and compliance standards
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
-                      <Phone className="w-5 h-5 text-primary" />
+                      <svg
+                        className="w-5 h-5 text-primary"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M13 10V3L4 14h7v7l9-11h-7z"
+                        />
+                      </svg>
                     </div>
                     <div>
-                      <p className="font-medium mb-1">Phone</p>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
-                      <MapPin className="w-5 h-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-medium mb-1">Address</p>
+                      <p className="font-medium mb-1">Rapid Implementation</p>
                       <p className="text-muted-foreground">
-                        123 AI Innovation Center, Tech District, San Francisco,
-                        CA 94105
+                        Get up and running quickly with our streamlined
+                        onboarding and implementation process
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
-                      <Clock className="w-5 h-5 text-primary" />
+                      <svg
+                        className="w-5 h-5 text-primary"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                        />
+                      </svg>
                     </div>
                     <div>
-                      <p className="font-medium mb-1">Office Hours</p>
+                      <p className="font-medium mb-1">Dedicated Support Team</p>
                       <p className="text-muted-foreground">
-                        Monday - Friday: 9:00 AM - 6:00 PM PST
+                        Our expert team is available to provide personalized
+                        support throughout your AI journey
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                      <svg
+                        className="w-5 h-5 text-primary"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="font-medium mb-1">Measurable Results</p>
+                      <p className="text-muted-foreground">
+                        Track your ROI with comprehensive analytics and
+                        performance metrics
                       </p>
                     </div>
                   </div>

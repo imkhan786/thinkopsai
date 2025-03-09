@@ -1,36 +1,37 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageSquare, BarChart2, LineChart, Database } from "lucide-react";
+import { Cpu, GitMerge, Code, BrainCircuit } from "lucide-react";
 
 const services = [
   {
-    title: "AI-Powered Chatbots",
+    title: "AI Process Automation",
     description:
-      "AI-powered chatbots: seamless conversations, customer support.",
-    icon: MessageSquare,
+      "Automate repetitive tasks and workflows with intelligent AI systems that learn and improve over time.",
+    icon: Cpu,
     color: "bg-blue-500",
     learnMoreLink: "#",
   },
   {
-    title: "Predictive Analytics",
-    description: "Anticipating success today. Harness data to make proactive.",
-    icon: BarChart2,
+    title: "Intelligent Workflows",
+    description:
+      "Optimize business processes with AI-powered workflow solutions that eliminate bottlenecks.",
+    icon: GitMerge,
     color: "bg-orange-500",
     learnMoreLink: "#",
   },
   {
-    title: "Data Analytics",
+    title: "Custom AI Development",
     description:
-      "Uncover insights, drive decisions. Transform data into actionable.",
-    icon: LineChart,
+      "Tailored AI solutions built specifically for your business needs and integration requirements.",
+    icon: Code,
     color: "bg-purple-500",
     learnMoreLink: "#",
   },
   {
-    title: "Big Data Processing",
+    title: "AI-Driven Decision Systems",
     description:
-      "Process massive datasets efficiently with our scalable solutions.",
-    icon: Database,
+      "Leverage machine learning to create intelligent decision-making systems for your organization.",
+    icon: BrainCircuit,
     color: "bg-green-500",
     learnMoreLink: "#",
   },
@@ -62,23 +63,23 @@ const ServicesSection = () => {
   }
 
   return (
-    <section className="w-full py-24 bg-background">
+    <section className="w-full py-12 bg-background">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start mb-16">
           <div className="max-w-lg mb-10 md:mb-0">
             <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
               <p className="text-primary font-medium text-sm">Our Services</p>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-              AI Solutions That Drive{" "}
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-left">
+              AI Automation That Drives{" "}
               <span className="text-primary">Real Results</span>
             </h2>
           </div>
           <div className="max-w-lg">
             <p className="text-lg text-muted-foreground">
-              Our cutting-edge AI solutions are designed to transform your
-              business operations, increase efficiency, and provide actionable
-              insights for strategic growth.
+              Our cutting-edge AI automation solutions streamline your business
+              operations, eliminate manual tasks, and create intelligent
+              workflows that adapt to your organization's needs.
             </p>
           </div>
         </div>

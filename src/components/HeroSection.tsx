@@ -267,27 +267,6 @@ const HeroSection = () => {
           </div>
         </motion.div>
       </div>
-
-      {/* Brands Section */}
-      <div className="container mx-auto mt-20">
-        <div className="text-center mb-8">
-          <p className="text-muted-foreground">
-            Trusted by industry leaders worldwide
-          </p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-          {["Google", "Microsoft", "Amazon", "IBM", "Oracle"].map(
-            (brand, index) => (
-              <div
-                key={index}
-                className="text-2xl font-bold text-muted-foreground/70"
-              >
-                {brand}
-              </div>
-            ),
-          )}
-        </div>
-      </div>
     </section>
   );
 };

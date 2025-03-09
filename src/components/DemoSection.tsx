@@ -18,7 +18,7 @@ const DemoSection = () => {
   };
 
   return (
-    <section className="w-full py-24 bg-muted/10">
+    <section className="w-full py-12 bg-muted/10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
